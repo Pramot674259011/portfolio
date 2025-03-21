@@ -1,62 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Minnie Pakdeetrakulwong (Minniejung)</h1>
-            <p>BA | Blockchain Enthusiast</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* Reset styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm John, a passionate web developer skilled in JavaScript, HTML, CSS, and blockchain development.</p>
-        </div>
-    </section>
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
 
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project">
-                    <h3>Project 1</h3>
-                    <p>A website built using HTML, CSS, and JavaScript.</p>
-                </div>
-                <div class="project">
-                    <h3>Project 2</h3>
-                    <p>A blockchain-based application for secure transactions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="674259011@webmail.npru.ac.th">674259011@webmail.npru.ac.th</a></p>
-            <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-        </div>
-    </section>
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+}
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 John Doe. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+header h1 {
+  margin-bottom: 5px;
+}
+
+nav ul {
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 50px 0;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #444;
+}
+
+/* Project Grid */
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project {
+  background: #e1ad45;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact a {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #c6a9a9;
+  color: #fff;
+  padding: 15px 0;
+}
